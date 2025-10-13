@@ -3,8 +3,11 @@
 setup guideline - https://www.zwn2001.space/posts/Graduate-Works/Works/Defects4J%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C
 
 ================================================================================
+
 Available Defects4J Projects:
+
 ================================================================================
+
  1. Chart                (26 bugs)
  2. Cli                  (39 bugs)
  3. Closure              (174 bugs)
@@ -22,4 +25,5 @@ Available Defects4J Projects:
 15. Math                 (106 bugs)
 16. Mockito              (38 bugs)
 17. Time                 (26 bugs)
+
 ================================================================================
