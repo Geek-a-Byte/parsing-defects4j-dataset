@@ -1,0 +1,2546 @@
+Checkout Path: defects4j_work/Collections_1_b
+Test Name: org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue2
+Error Message: junit.framework.AssertionFailedError: expected:<10> but was:<NewValue>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestFlat3Map.testEntryIteratorSetValue2(TestFlat3Map.java:247)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_1_b
+Test Name: org.apache.commons.collections.map.TestFlat3Map::testEntryIteratorSetValue3
+Error Message: junit.framework.AssertionFailedError: expected:<10> but was:<NewValue>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestFlat3Map.testEntryIteratorSetValue3(TestFlat3Map.java:267)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_1_b
+Test Name: org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue2
+Error Message: junit.framework.AssertionFailedError: expected:<10> but was:<NewValue>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestFlat3Map.testMapIteratorSetValue2(TestFlat3Map.java:305)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_1_b
+Test Name: org.apache.commons.collections.map.TestFlat3Map::testMapIteratorSetValue3
+Error Message: junit.framework.AssertionFailedError: expected:<10> but was:<NewValue>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestFlat3Map.testMapIteratorSetValue3(TestFlat3Map.java:325)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-1:
+https://issues.apache.org/jira/browse/COLLECTIONS-217
+patch for Collections-1:
+--- defects4j_work/Collections_1_b/src/java/org/apache/commons/collections/map/Flat3Map.java	2025-10-13 20:10:40.947556113 +0600
++++ defects4j_work/Collections_1_f/src/java/org/apache/commons/collections/map/Flat3Map.java	2025-10-13 20:10:53.077993073 +0600
+@@ -651,10 +651,13 @@
+             switch (nextIndex) {
+                 case 3: 
+                     parent.value3 = value;
++                    break;
+                 case 2:
+                     parent.value2 = value;
++                    break;
+                 case 1:
+                     parent.value1 = value;
++                    break;
+             }
+             return old;
+         }
+@@ -803,10 +806,13 @@
+             switch (nextIndex) {
+                 case 3: 
+                     parent.value3 = value;
++                    break;
+                 case 2:
+                     parent.value2 = value;
++                    break;
+                 case 1:
+                     parent.value1 = value;
++                    break;
+             }
+             return old;
+         }
+
+
+
+Checkout Path: defects4j_work/Collections_2_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testInclude
+Error Message: junit.framework.ComparisonFailure: expected:<i[nclude]> but was:<i[mport]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at junit.framework.TestCase.assertEquals(TestCase.java:269)
+	at org.apache.commons.collections.TestExtendedProperties.testInclude(TestExtendedProperties.java:325)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-2:
+https://issues.apache.org/jira/browse/COLLECTIONS-214
+patch for Collections-2:
+--- defects4j_work/Collections_2_b/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:10:56.906118678 +0600
++++ defects4j_work/Collections_2_f/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:11:04.834584806 +0600
+@@ -175,6 +175,7 @@
+      * This is the name of the property that can point to other
+      * properties file for including other properties files.
+      */
++    private String includePropertyName = null;
+ 
+     /**
+      * This is the default name of the property that can point to other
+@@ -510,7 +511,13 @@
+      * @return the property name which includes another property
+      */
+     public String getInclude() {
++        if (includePropertyName == null) {
+             return include;  // backwards compatability
++        }
++        if ("".equals(includePropertyName)) {
++            return null;  // hack to allow backwards compatability
++        }
++        return includePropertyName;
+     }
+ 
+     /**
+@@ -525,7 +532,10 @@
+      * @param inc  the property name which includes another property, empty converted to null
+      */
+     public void setInclude(String inc) {
+-        include = inc;
++        if (inc == null) {
++            inc = "";  // hack to allow backwards compatability
++        }
++        includePropertyName = inc;
+     }
+ 
+     /**
+@@ -569,6 +579,7 @@
+         }
+ 
+         try {
++            String includeProperty = getInclude();
+             while (true) {
+                 String line = reader.readProperty();
+                 if (line == null) {
+@@ -585,7 +596,7 @@
+                         continue;
+                     }
+ 
+-                    if (getInclude() != null && key.equalsIgnoreCase(getInclude())) {
++                    if (includeProperty != null && key.equalsIgnoreCase(includeProperty)) {
+                         // Recursively load properties files.
+                         File file = null;
+ 
+
+
+
+Checkout Path: defects4j_work/Collections_3_b
+Test Name: org.apache.commons.collections.TestCollectionUtils::testRemoveAll
+Error Message: junit.framework.AssertionFailedError: expected:<1> but was:<2>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.collections.TestCollectionUtils.testRemoveAll(TestCollectionUtils.java:1283)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-3:
+https://issues.apache.org/jira/browse/COLLECTIONS-219
+patch for Collections-3:
+--- defects4j_work/Collections_3_b/src/java/org/apache/commons/collections/CollectionUtils.java	2025-10-13 20:11:08.802777827 +0600
++++ defects4j_work/Collections_3_f/src/java/org/apache/commons/collections/CollectionUtils.java	2025-10-13 20:11:15.971073525 +0600
+@@ -1118,7 +1118,7 @@
+      * @since Commons Collections 3.3 (method existed in 3.2 but was completely broken)
+      */
+     public static Collection removeAll(Collection collection, Collection remove) {
+-        return ListUtils.retainAll(collection, remove);
++        return ListUtils.removeAll(collection, remove);
+     }
+ 
+     //-----------------------------------------------------------------------
+
+
+
+Checkout Path: defects4j_work/Collections_4_b
+Test Name: org.apache.commons.collections.map.TestMultiValueMap::testPutWithList
+Error Message: junit.framework.AssertionFailedError: expected:<a> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestMultiValueMap.testPutWithList(TestMultiValueMap.java:253)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_4_b
+Test Name: org.apache.commons.collections.map.TestMultiValueMap::testPutAll_KeyCollection
+Error Message: junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:174)
+	at junit.framework.Assert.assertEquals(Assert.java:181)
+	at junit.framework.TestCase.assertEquals(TestCase.java:341)
+	at org.apache.commons.collections.map.TestMultiValueMap.testPutAll_KeyCollection(TestMultiValueMap.java:315)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_4_b
+Test Name: org.apache.commons.collections.map.TestMultiValueMap::testPutWithSet
+Error Message: junit.framework.AssertionFailedError: expected:<a> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestMultiValueMap.testPutWithSet(TestMultiValueMap.java:262)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-4:
+https://issues.apache.org/jira/browse/COLLECTIONS-228
+patch for Collections-4:
+--- defects4j_work/Collections_4_b/src/java/org/apache/commons/collections/map/MultiValueMap.java	2025-10-13 20:11:19.444514798 +0600
++++ defects4j_work/Collections_4_f/src/java/org/apache/commons/collections/map/MultiValueMap.java	2025-10-13 20:11:28.552701167 +0600
+@@ -206,11 +206,11 @@
+         Collection coll = getCollection(key);
+         if (coll == null) {
+             coll = createCollection(1);  // might produce a non-empty collection
+-            result = coll.add(value);
++            coll.add(value);
+             if (coll.size() > 0) {
+                 // only add if non-zero size to maintain class state
+                 getMap().put(key, coll);
+-                result = false;
++                result = true;  // map definitely changed
+             }
+         } else {
+             result = coll.add(value);
+@@ -307,19 +307,20 @@
+         if (values == null || values.size() == 0) {
+             return false;
+         }
++        boolean result = false;
+         Collection coll = getCollection(key);
+         if (coll == null) {
+             coll = createCollection(values.size());  // might produce a non-empty collection
+-            boolean result = coll.addAll(values);
++            coll.addAll(values);
+             if (coll.size() > 0) {
+                 // only add if non-zero size to maintain class state
+                 getMap().put(key, coll);
+-                result = false;
++                result = true;  // map definitely changed
+             }
+-            return result;
+         } else {
+-            return coll.addAll(values);
++            result = coll.addAll(values);
+         }
++        return result;
+     }
+ 
+     /**
+
+
+
+Checkout Path: defects4j_work/Collections_5_b
+Test Name: org.apache.commons.collections.list.TestSetUniqueList::testIntCollectionAddAll
+Error Message: junit.framework.AssertionFailedError: First new element should be at index 0 expected:<2> but was:<1>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.TestCase.assertEquals(TestCase.java:244)
+	at org.apache.commons.collections.list.TestSetUniqueList.testIntCollectionAddAll(TestSetUniqueList.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-5:
+https://issues.apache.org/jira/browse/COLLECTIONS-249
+patch for Collections-5:
+--- defects4j_work/Collections_5_b/src/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:11:32.037065235 +0600
++++ defects4j_work/Collections_5_f/src/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:11:39.145463157 +0600
+@@ -192,8 +192,12 @@
+ 
+         // adds all elements
+         for (final Iterator it = coll.iterator(); it.hasNext();) {
+-            add(it.next());
++            int sizeBeforeAddNext = size();
++            add(index, it.next());
+             // if it was inserted, then increase the target index
++            if (sizeBeforeAddNext != size()) {
++              index++;
++            }
+         }
+ 
+         // compares sizes to detect if collection changed
+
+
+
+Checkout Path: defects4j_work/Collections_6_b
+Test Name: org.apache.commons.collections.map.TestFlat3Map::testCollections261
+Error Message: junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.map.TestFlat3Map.testCollections261(TestFlat3Map.java:398)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-6:
+https://issues.apache.org/jira/browse/COLLECTIONS-261
+patch for Collections-6:
+--- defects4j_work/Collections_6_b/src/java/org/apache/commons/collections/map/Flat3Map.java	2025-10-13 20:11:42.629637468 +0600
++++ defects4j_work/Collections_6_f/src/java/org/apache/commons/collections/map/Flat3Map.java	2025-10-13 20:11:55.013584395 +0600
+@@ -416,7 +416,7 @@
+                         return old;
+                     }
+                     if (key2 == null) {
+-                        Object old = value3;
++                        Object old = value2;
+                         hash2 = hash3;
+                         key2 = key3;
+                         value2 = value3;
+@@ -427,7 +427,7 @@
+                         return old;
+                     }
+                     if (key1 == null) {
+-                        Object old = value3;
++                        Object old = value1;
+                         hash1 = hash3;
+                         key1 = key3;
+                         value1 = value3;
+@@ -448,7 +448,7 @@
+                         return old;
+                     }
+                     if (key1 == null) {
+-                        Object old = value2;
++                        Object old = value1;
+                         hash1 = hash2;
+                         key1 = key2;
+                         value1 = value2;
+@@ -483,7 +483,7 @@
+                             return old;
+                         }
+                         if (hash2 == hashCode && key.equals(key2)) {
+-                            Object old = value3;
++                            Object old = value2;
+                             hash2 = hash3;
+                             key2 = key3;
+                             value2 = value3;
+@@ -494,7 +494,7 @@
+                             return old;
+                         }
+                         if (hash1 == hashCode && key.equals(key1)) {
+-                            Object old = value3;
++                            Object old = value1;
+                             hash1 = hash3;
+                             key1 = key3;
+                             value1 = value3;
+@@ -515,7 +515,7 @@
+                             return old;
+                         }
+                         if (hash1 == hashCode && key.equals(key1)) {
+-                            Object old = value2;
++                            Object old = value1;
+                             hash1 = hash2;
+                             key1 = key2;
+                             value1 = value2;
+
+
+
+Checkout Path: defects4j_work/Collections_7_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testKeySet2
+Error Message: java.util.NoSuchElementException
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1000)
+	at org.apache.commons.collections.TestExtendedProperties.testKeySet2(TestExtendedProperties.java:362)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_7_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testKeySet3
+Error Message: java.util.NoSuchElementException
+	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1000)
+	at org.apache.commons.collections.TestExtendedProperties.testKeySet3(TestExtendedProperties.java:379)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_7_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testKeySet4
+Error Message: junit.framework.ComparisonFailure: expected:<[c]> but was:<[b]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at junit.framework.TestCase.assertEquals(TestCase.java:269)
+	at org.apache.commons.collections.TestExtendedProperties.testKeySet4(TestExtendedProperties.java:395)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-7:
+https://issues.apache.org/jira/browse/COLLECTIONS-278
+patch for Collections-7:
+--- defects4j_work/Collections_7_b/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:11:58.753753289 +0600
++++ defects4j_work/Collections_7_f/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:12:08.678211110 +0600
+@@ -640,7 +640,7 @@
+      */
+     public Object getProperty(String key) {
+         // first, try to get from the 'user value' store
+-        Object obj = this.get(key);
++        Object obj = super.get(key);
+ 
+         if (obj == null) {
+             // if there isn't a value there, get it from the
+@@ -706,7 +706,7 @@
+         if (!containsKey(key)) {
+             keysAsListed.add(key);
+         }
+-        put(key, value);
++        super.put(key, value);
+     }
+ 
+     /**
+@@ -728,7 +728,7 @@
+             List values = new Vector(2);
+             values.add(current);
+             values.add(value);
+-            put(key, values);
++            super.put(key, values);
+             
+         } else if (current instanceof List) {
+             // already a list - just add the new token
+@@ -739,7 +739,7 @@
+             if (!containsKey(key)) {
+                 keysAsListed.add(key);
+             }
+-            put(key, value);
++            super.put(key, value);
+         }
+     }
+ 
+@@ -832,7 +832,7 @@
+                     break;
+                 }
+             }
+-            remove(key);
++            super.remove(key);
+         }
+     }
+ 
+@@ -1091,7 +1091,7 @@
+         } else if (value instanceof String) {
+             Vector values = new Vector(1);
+             values.add(value);
+-            put(key, values);
++            super.put(key, values);
+             return values;
+             
+         } else if (value == null) {
+@@ -1143,7 +1143,7 @@
+         } else if (value instanceof String) {
+             List values = new ArrayList(1);
+             values.add(value);
+-            put(key, values);
++            super.put(key, values);
+             return values;
+             
+         } else if (value == null) {
+@@ -1209,7 +1209,7 @@
+         } else if (value instanceof String) {
+             String s = testBoolean((String) value);
+             Boolean b = new Boolean(s);
+-            put(key, b);
++            super.put(key, b);
+             return b;
+             
+         } else if (value == null) {
+@@ -1303,7 +1303,7 @@
+             
+         } else if (value instanceof String) {
+             Byte b = new Byte((String) value);
+-            put(key, b);
++            super.put(key, b);
+             return b;
+             
+         } else if (value == null) {
+@@ -1373,7 +1373,7 @@
+             
+         } else if (value instanceof String) {
+             Short s = new Short((String) value);
+-            put(key, s);
++            super.put(key, s);
+             return s;
+             
+         } else if (value == null) {
+@@ -1471,7 +1471,7 @@
+             
+         } else if (value instanceof String) {
+             Integer i = new Integer((String) value);
+-            put(key, i);
++            super.put(key, i);
+             return i;
+             
+         } else if (value == null) {
+@@ -1541,7 +1541,7 @@
+             
+         } else if (value instanceof String) {
+             Long l = new Long((String) value);
+-            put(key, l);
++            super.put(key, l);
+             return l;
+             
+         } else if (value == null) {
+@@ -1611,7 +1611,7 @@
+             
+         } else if (value instanceof String) {
+             Float f = new Float((String) value);
+-            put(key, f);
++            super.put(key, f);
+             return f;
+             
+         } else if (value == null) {
+@@ -1681,7 +1681,7 @@
+             
+         } else if (value instanceof String) {
+             Double d = new Double((String) value);
+-            put(key, d);
++            super.put(key, d);
+             return d;
+             
+         } else if (value == null) {
+@@ -1723,6 +1723,12 @@
+      * @param value for the property
+      * @return old value of the property
+      */
++    public Object put(Object key, Object value) {
++        String strKey = String.valueOf(key);
++        Object ret = getProperty(strKey);
++        addProperty(strKey, value);
++        return ret;
++    }
+ 
+     /**
+      * Add a map full of key/value pairs to the ExtendedProperties. 
+@@ -1753,5 +1759,11 @@
+      * @param key specifying the property
+      * @return old value of the property
+      */
++    public Object remove(Object key) {
++        String strKey = String.valueOf(key);
++        Object ret = getProperty(strKey);
++        clearProperty(strKey);
++        return ret;
++    }
+ 
+ }
+
+
+
+Checkout Path: defects4j_work/Collections_8_b
+Test Name: org.apache.commons.collections.buffer.TestUnboundedFifoBuffer::testCollections220
+Error Message: junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.collections.buffer.TestUnboundedFifoBuffer.testCollections220(TestUnboundedFifoBuffer.java:423)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-8:
+https://issues.apache.org/jira/browse/COLLECTIONS-220
+patch for Collections-8:
+--- defects4j_work/Collections_8_b/src/java/org/apache/commons/collections/buffer/UnboundedFifoBuffer.java	2025-10-13 20:12:12.258377624 +0600
++++ defects4j_work/Collections_8_f/src/java/org/apache/commons/collections/buffer/UnboundedFifoBuffer.java	2025-10-13 20:12:19.297214373 +0600
+@@ -115,6 +115,7 @@
+     private void writeObject(ObjectOutputStream out) throws IOException {
+         out.defaultWriteObject();
+         out.writeInt(size());
++        out.writeInt(buffer.length);
+         for (Iterator it = iterator(); it.hasNext();) {
+             out.writeObject(it.next());
+         }
+@@ -130,7 +131,8 @@
+     private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+         in.defaultReadObject();
+         int size = in.readInt();
+-        buffer = new Object[size + 1];
++        int length = in.readInt();
++        buffer = new Object[length];
+         for (int i = 0; i < size; i++) {
+             buffer[i] = in.readObject();
+         }
+
+
+
+Checkout Path: defects4j_work/Collections_9_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testCollections271
+Error Message: junit.framework.AssertionFailedError: expected:<\\192.168.1.91\test> but was:<\192.168.1.91\test>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.TestExtendedProperties.testCollections271(TestExtendedProperties.java:407)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-9:
+https://issues.apache.org/jira/browse/COLLECTIONS-271
+patch for Collections-9:
+--- defects4j_work/Collections_9_b/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:12:22.737374938 +0600
++++ defects4j_work/Collections_9_f/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:12:29.461690739 +0600
+@@ -813,7 +813,7 @@
+     public void combine(ExtendedProperties props) {
+         for (Iterator it = props.getKeys(); it.hasNext();) {
+             String key = (String) it.next();
+-            setProperty(key, props.get(key));
++            super.put(key, props.get(key));
+         }
+     }
+     
+
+
+
+Checkout Path: defects4j_work/Collections_10_b
+Test Name: org.apache.commons.collections.map.TestMultiValueMap::testEmptyMapCompatibility
+Error Message: java.io.InvalidClassException: org.apache.commons.collections.map.MultiValueMap; class invalid for deserialization
+	at java.base/java.io.ObjectStreamClass$ExceptionInfo.newInvalidClassException(ObjectStreamClass.java:158)
+	at java.base/java.io.ObjectStreamClass.checkDeserialize(ObjectStreamClass.java:746)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2202)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1687)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:489)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:447)
+	at org.apache.commons.collections.AbstractTestObject.readExternalFormFromStream(AbstractTestObject.java:326)
+	at org.apache.commons.collections.AbstractTestObject.readExternalFormFromDisk(AbstractTestObject.java:301)
+	at org.apache.commons.collections.map.TestMultiValueMap.testEmptyMapCompatibility(TestMultiValueMap.java:394)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_10_b
+Test Name: org.apache.commons.collections.map.TestMultiValueMap::testFullMapCompatibility
+Error Message: java.io.InvalidClassException: org.apache.commons.collections.map.MultiValueMap; class invalid for deserialization
+	at java.base/java.io.ObjectStreamClass$ExceptionInfo.newInvalidClassException(ObjectStreamClass.java:158)
+	at java.base/java.io.ObjectStreamClass.checkDeserialize(ObjectStreamClass.java:746)
+	at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2202)
+	at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1687)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:489)
+	at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:447)
+	at org.apache.commons.collections.AbstractTestObject.readExternalFormFromStream(AbstractTestObject.java:326)
+	at org.apache.commons.collections.AbstractTestObject.readExternalFormFromDisk(AbstractTestObject.java:301)
+	at org.apache.commons.collections.map.TestMultiValueMap.testFullMapCompatibility(TestMultiValueMap.java:399)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-10:
+https://issues.apache.org/jira/browse/COLLECTIONS-240
+patch for Collections-10:
+--- defects4j_work/Collections_10_b/src/java/org/apache/commons/collections/map/MultiValueMap.java	2025-10-13 20:12:33.005857827 +0600
++++ defects4j_work/Collections_10_f/src/java/org/apache/commons/collections/map/MultiValueMap.java	2025-10-13 20:12:43.810367800 +0600
+@@ -66,9 +66,10 @@
+  * @version $Revision$ $Date$
+  * @since Commons Collections 3.2
+  */
+-public class MultiValueMap extends AbstractMapDecorator implements MultiMap {
++public class MultiValueMap extends AbstractMapDecorator implements MultiMap, Serializable {
+ 
+     /** Serialization version */
++    private static final long serialVersionUID = -2214159910087182007L;
+ 
+     /** The factory for creating value collections. */
+     private final Factory collectionFactory;
+@@ -457,7 +458,7 @@
+     /**
+      * Inner class that provides a simple reflection factory.
+      */
+-    private static class ReflectionFactory implements Factory {
++    private static class ReflectionFactory implements Factory, Serializable {
+         private final Class clazz;
+ 
+         public ReflectionFactory(Class clazz) {
+
+
+
+Checkout Path: defects4j_work/Collections_11_b
+Test Name: org.apache.commons.collections.keyvalue.TestMultiKey::testEqualsAfterSerialization
+Error Message: junit.framework.AssertionFailedError: expected:<2> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:86)
+	at junit.framework.TestCase.assertEquals(TestCase.java:253)
+	at org.apache.commons.collections.keyvalue.TestMultiKey.testEqualsAfterSerialization(TestMultiKey.java:269)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-11:
+https://issues.apache.org/jira/browse/COLLECTIONS-266
+patch for Collections-11:
+--- defects4j_work/Collections_11_b/src/java/org/apache/commons/collections/keyvalue/MultiKey.java	2025-10-13 20:12:47.502540850 +0600
++++ defects4j_work/Collections_11_f/src/java/org/apache/commons/collections/keyvalue/MultiKey.java	2025-10-13 20:12:55.161160254 +0600
+@@ -272,4 +272,8 @@
+ 	 * only stable for the same process). 
+ 	 * @return the instance with recalculated hash code
+ 	 */
++	private Object readResolve() {
++		calculateHashCode(keys);
++		return this;
++	}
+ }
+
+
+
+Checkout Path: defects4j_work/Collections_12_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testCollections271
+Error Message: junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertNotNull(Assert.java:256)
+	at junit.framework.Assert.assertNotNull(Assert.java:248)
+	at junit.framework.TestCase.assertNotNull(TestCase.java:417)
+	at org.apache.commons.collections.TestExtendedProperties.testCollections271(TestExtendedProperties.java:415)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-12:
+https://issues.apache.org/jira/browse/COLLECTIONS-271
+patch for Collections-12:
+--- defects4j_work/Collections_12_b/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:12:58.541321257 +0600
++++ defects4j_work/Collections_12_f/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:13:05.693669972 +0600
+@@ -820,7 +820,8 @@
+     public void combine(ExtendedProperties props) {
+         for (Iterator it = props.getKeys(); it.hasNext();) {
+             String key = (String) it.next();
+-            super.put(key, props.get(key));
++            clearProperty(key);
++            addPropertyDirect(key, props.get(key));
+         }
+     }
+     
+
+
+
+Checkout Path: defects4j_work/Collections_13_b
+Test Name: org.apache.commons.collections.TestExtendedProperties::testCollections299
+Error Message: java.lang.NullPointerException
+	at java.base/java.util.Hashtable.put(Hashtable.java:475)
+	at org.apache.commons.collections.ExtendedProperties.addPropertyInternal(ExtendedProperties.java:749)
+	at org.apache.commons.collections.ExtendedProperties.addProperty(ExtendedProperties.java:697)
+	at org.apache.commons.collections.ExtendedProperties.setProperty(ExtendedProperties.java:763)
+	at org.apache.commons.collections.ExtendedProperties.convertProperties(ExtendedProperties.java:1724)
+	at org.apache.commons.collections.TestExtendedProperties.testCollections299(TestExtendedProperties.java:438)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-13:
+https://issues.apache.org/jira/browse/COLLECTIONS-299
+patch for Collections-13:
+--- defects4j_work/Collections_13_b/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:13:09.117842627 +0600
++++ defects4j_work/Collections_13_f/src/java/org/apache/commons/collections/ExtendedProperties.java	2025-10-13 20:13:16.982221375 +0600
+@@ -1721,7 +1721,10 @@
+ 
+         for (Enumeration e = props.propertyNames(); e.hasMoreElements();) {
+             String s = (String) e.nextElement();
+-            c.setProperty(s, props.getProperty(s));
++            String value = props.getProperty(s);
++            if(value != null) {
++                c.setProperty(s, value);
++            }
+         }
+ 
+         return c;
+
+
+
+Checkout Path: defects4j_work/Collections_14_b
+Test Name: org.apache.commons.collections.map.TestCaseInsensitiveMap::testLocaleIndependence
+Error Message: junit.framework.AssertionFailedError: en: 1 expected:<value> but was:<null>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.TestCase.assertEquals(TestCase.java:244)
+	at org.apache.commons.collections.map.TestCaseInsensitiveMap.testLocaleIndependence(TestCaseInsensitiveMap.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-14:
+https://issues.apache.org/jira/browse/COLLECTIONS-294
+patch for Collections-14:
+--- defects4j_work/Collections_14_b/src/java/org/apache/commons/collections/map/CaseInsensitiveMap.java	2025-10-13 20:13:20.338224878 +0600
++++ defects4j_work/Collections_14_f/src/java/org/apache/commons/collections/map/CaseInsensitiveMap.java	2025-10-13 20:13:27.230480718 +0600
+@@ -118,7 +118,11 @@
+      */
+     protected Object convertKey(Object key) {
+         if (key != null) {
+-            return key.toString().toLowerCase();
++            char[] chars = key.toString().toCharArray();
++            for (int i = chars.length - 1; i >= 0; i--) {
++                chars[i] = Character.toLowerCase(Character.toUpperCase(chars[i]));
++            }
++            return new String(chars);
+         } else {
+             return AbstractHashedMap.NULL;
+         }
+
+
+
+Checkout Path: defects4j_work/Collections_15_b
+Test Name: org.apache.commons.collections.list.TestSetUniqueList::testCollections304
+Error Message: junit.framework.AssertionFailedError: expected:<3> but was:<4>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.collections.list.TestSetUniqueList.testCollections304(TestSetUniqueList.java:466)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-15:
+https://issues.apache.org/jira/browse/COLLECTIONS-304
+patch for Collections-15:
+--- defects4j_work/Collections_15_b/src/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:13:30.594693154 +0600
++++ defects4j_work/Collections_15_f/src/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:13:37.895167918 +0600
+@@ -221,13 +221,13 @@
+         int pos = indexOf(object);
+         Object removed = super.set(index, object);
+ 
+-        if (pos == -1 || pos == index) {
++        if (pos != -1 && pos != index) {
+             // the object is already in the uniq list
+             // (and it hasn't been swapped with itself)
+-            return removed;
++            super.remove(pos);  // remove the duplicate by index
+         }
+ 
+-        super.remove(pos);
++        set.add(object);      // add the new item to the unique set
+         set.remove(removed);  // remove the item deleted by the set
+ 
+         return removed;  // return the item deleted by the set
+
+
+
+Checkout Path: defects4j_work/Collections_16_b
+Test Name: org.apache.commons.collections.list.TestSetUniqueList::testCollections307
+Error Message: junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertFalse(Assert.java:39)
+	at junit.framework.Assert.assertFalse(Assert.java:47)
+	at junit.framework.TestCase.assertFalse(TestCase.java:219)
+	at org.apache.commons.collections.list.TestSetUniqueList.testCollections307(TestSetUniqueList.java:487)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-16:
+https://issues.apache.org/jira/browse/COLLECTIONS-307
+patch for Collections-16:
+--- defects4j_work/Collections_16_b/src/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:13:41.503356670 +0600
++++ defects4j_work/Collections_16_f/src/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:13:48.323691603 +0600
+@@ -283,7 +283,26 @@
+     }
+ 
+     public List subList(int fromIndex, int toIndex) {
+-        return new SetUniqueList(super.subList(fromIndex, toIndex), set);
++        List superSubList = super.subList(fromIndex, toIndex);
++        Set subSet = createSetBasedOnList(set, superSubList);
++        return new SetUniqueList(superSubList, subSet);
++    }
++
++    protected Set createSetBasedOnList(Set set, List list) {
++        Set subSet = null;
++        if(set.getClass().equals(HashSet.class)) {
++            subSet = new HashSet();
++        } else {
++            try {
++                subSet = (Set) set.getClass().newInstance();
++            } catch(InstantiationException ie) {
++                subSet = new HashSet();
++            } catch(IllegalAccessException iae) {
++                subSet = new HashSet();
++            }
++        }
++        subSet.addAll(list);
++        return subSet;
+     }
+ 
+     //-----------------------------------------------------------------------
+
+
+
+Checkout Path: defects4j_work/Collections_17_b
+Test Name: org.apache.commons.collections.functors.TestEqualPredicate::objectFactoryUsesEqualsForTest
+Error Message: junit.framework.AssertionFailedError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at org.apache.commons.collections.functors.BasicPredicateTestBase.assertFalse(BasicPredicateTestBase.java:48)
+	at org.apache.commons.collections.functors.TestEqualPredicate.objectFactoryUsesEqualsForTest(TestEqualPredicate.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-17:
+https://issues.apache.org/jira/browse/COLLECTIONS-239
+patch for Collections-17:
+--- defects4j_work/Collections_17_b/src/main/java/org/apache/commons/collections/functors/EqualPredicate.java	2025-10-13 20:13:52.789826676 +0600
++++ defects4j_work/Collections_17_f/src/main/java/org/apache/commons/collections/functors/EqualPredicate.java	2025-10-13 20:14:01.418235223 +0600
+@@ -81,7 +81,7 @@
+     public EqualPredicate(T object) {
+         // do not use the DefaultEquator to keep backwards compatibility
+         // the DefaultEquator returns also true if the two object references are equal
+-        this(object, new DefaultEquator<T>());
++        this(object, null);
+     }
+ 
+     /**
+@@ -105,7 +105,11 @@
+      * @return true if input object equals stored value
+      */
+     public boolean evaluate(T object) {
++        if (equator != null) {
+             return equator.equate(iValue, object);
++        } else {
++            return iValue.equals(object);
++        }
+     }
+ 
+     /**
+
+
+
+Checkout Path: defects4j_work/Collections_18_b
+Test Name: org.apache.commons.collections.set.ListOrderedSetTest::testRetainAllCollections426
+Error Message: junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.apache.commons.collections.set.ListOrderedSetTest.testRetainAllCollections426(ListOrderedSetTest.java:226)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-18:
+https://issues.apache.org/jira/browse/COLLECTIONS-426
+patch for Collections-18:
+--- defects4j_work/Collections_18_b/src/main/java/org/apache/commons/collections/set/ListOrderedSet.java	2025-10-13 20:14:05.942450095 +0600
++++ defects4j_work/Collections_18_f/src/main/java/org/apache/commons/collections/set/ListOrderedSet.java	2025-10-13 20:14:34.929523544 +0600
+@@ -226,20 +226,26 @@
+ 
+     @Override
+     public boolean retainAll(Collection<?> coll) {
+-        boolean result = collection.retainAll(coll);
+-        if (result == false) {
++        Set<Object> collectionRetainAll = new HashSet<Object>();
++        for (Iterator<?> it = coll.iterator(); it.hasNext();) {
++            Object next = it.next();
++            if (collection.contains(next)) {
++                collectionRetainAll.add(next);
++            }
++        }
++        if (collectionRetainAll.size() == collection.size()) {
+             return false;
+         }
+-        if (collection.size() == 0) {
+-            setOrder.clear();
++        if (collectionRetainAll.size() == 0) {
++            clear();
+         } else {
+-            for (Iterator<E> it = setOrder.iterator(); it.hasNext();) {
+-                if (!collection.contains(it.next())) {
++            for (Iterator<E> it = iterator(); it.hasNext();) {
++                if (!collectionRetainAll.contains(it.next())) {
+                     it.remove();
+                 }
+             }
+         }
+-        return result;
++        return true;
+     }
+ 
+     @Override
+
+
+
+Checkout Path: defects4j_work/Collections_19_b
+Test Name: org.apache.commons.collections.list.SetUniqueListTest::testSetCollections444
+Error Message: junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.apache.commons.collections.list.SetUniqueListTest.testSetCollections444(SetUniqueListTest.java:615)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-19:
+https://issues.apache.org/jira/browse/COLLECTIONS-444
+patch for Collections-19:
+--- defects4j_work/Collections_19_b/src/main/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:14:39.485737897 +0600
++++ defects4j_work/Collections_19_f/src/main/java/org/apache/commons/collections/list/SetUniqueList.java	2025-10-13 20:14:48.174147409 +0600
+@@ -232,9 +232,12 @@
+             // the object is already in the uniq list
+             // (and it hasn't been swapped with itself)
+             super.remove(pos); // remove the duplicate by index
++            set.remove(removed); // remove the item deleted by the set
++        } else if (pos == -1) {
++            set.add(object); // add the new item to the unique set
++            set.remove(removed); // remove the item deleted by the set
+         }
+-        set.add(object); 
+-        set.remove(removed);
++        
+         return removed; // return the item deleted by the set
+     }
+ 
+
+
+
+Checkout Path: defects4j_work/Collections_20_b
+Test Name: org.apache.commons.collections.list.TreeListTest::testBugCollections447
+Error Message: junit.framework.ComparisonFailure: expected:<[A]> but was:<[C]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at junit.framework.TestCase.assertEquals(TestCase.java:269)
+	at org.apache.commons.collections.list.TreeListTest.testBugCollections447(TreeListTest.java:268)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-20:
+https://issues.apache.org/jira/browse/COLLECTIONS-447
+patch for Collections-20:
+--- defects4j_work/Collections_20_b/src/main/java/org/apache/commons/collections/list/TreeList.java	2025-10-13 20:14:52.743517723 +0600
++++ defects4j_work/Collections_20_f/src/main/java/org/apache/commons/collections/list/TreeList.java	2025-10-13 20:15:02.267973173 +0600
+@@ -900,16 +900,14 @@
+             if (currentIndex == -1) {
+                 throw new IllegalStateException();
+             }
+-            if (nextIndex == currentIndex) {
+-                next = next.next();
+-                parent.remove(currentIndex);
+-            } else {
++            parent.remove(currentIndex);
++            if (nextIndex != currentIndex) {
+                 // remove() following next()
+-                parent.remove(currentIndex);
+                 nextIndex--;
+             }
+             // the AVL node referenced by next may have become stale after a remove
+             // reset it now: will be retrieved by next call to next()/previous() via nextIndex
++            next = null;
+             current = null;
+             currentIndex = -1;
+             expectedModCount++;
+
+
+
+Checkout Path: defects4j_work/Collections_21_b
+Test Name: org.apache.commons.collections4.list.SetUniqueListTest::testSubListIsUnmodifiable
+Error Message: junit.framework.AssertionFailedError: subList should be unmodifiable
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at org.apache.commons.collections4.list.SetUniqueListTest.testSubListIsUnmodifiable(SetUniqueListTest.java:470)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-21:
+https://issues.apache.org/jira/browse/COLLECTIONS-310
+patch for Collections-21:
+--- defects4j_work/Collections_21_b/src/main/java/org/apache/commons/collections4/list/SetUniqueList.java	2025-10-13 20:15:06.800203536 +0600
++++ defects4j_work/Collections_21_f/src/main/java/org/apache/commons/collections4/list/SetUniqueList.java	2025-10-13 20:15:15.368652801 +0600
+@@ -24,6 +24,7 @@
+ import java.util.ListIterator;
+ import java.util.Set;
+ 
++import org.apache.commons.collections4.ListUtils;
+ import org.apache.commons.collections4.set.UnmodifiableSet;
+ import org.apache.commons.collections4.iterators.AbstractIteratorDecorator;
+ import org.apache.commons.collections4.iterators.AbstractListIteratorDecorator;
+@@ -329,7 +330,7 @@
+     public List<E> subList(final int fromIndex, final int toIndex) {
+         final List<E> superSubList = super.subList(fromIndex, toIndex);
+         final Set<E> subSet = createSetBasedOnList(set, superSubList);
+-        return new SetUniqueList<E>(superSubList, subSet);
++        return ListUtils.unmodifiableList(new SetUniqueList<E>(superSubList, subSet));
+     }
+ 
+     /**
+
+
+
+Checkout Path: defects4j_work/Collections_22_b
+Test Name: org.apache.commons.collections4.map.ListOrderedMapTest::testCOLLECTIONS_474_nullValues
+Error Message: java.lang.IndexOutOfBoundsException: Index: 2, Size: 1
+	at java.base/java.util.ArrayList.rangeCheckForAdd(ArrayList.java:788)
+	at java.base/java.util.ArrayList.add(ArrayList.java:513)
+	at org.apache.commons.collections4.map.ListOrderedMap.put(ListOrderedMap.java:450)
+	at org.apache.commons.collections4.map.ListOrderedMap.putAll(ListOrderedMap.java:246)
+	at org.apache.commons.collections4.map.ListOrderedMapTest.testCOLLECTIONS_474_nullValues(ListOrderedMapTest.java:399)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-22:
+https://issues.apache.org/jira/browse/COLLECTIONS-474
+patch for Collections-22:
+--- defects4j_work/Collections_22_b/src/main/java/org/apache/commons/collections4/map/ListOrderedMap.java	2025-10-13 20:15:18.848835265 +0600
++++ defects4j_work/Collections_22_f/src/main/java/org/apache/commons/collections4/map/ListOrderedMap.java	2025-10-13 20:15:26.291732143 +0600
+@@ -243,10 +243,12 @@
+      */
+     public void putAll(int index, final Map<? extends K, ? extends V> map) {
+         for (final Map.Entry<? extends K, ? extends V> entry : map.entrySet()) {
+-            final V old = put(index, entry.getKey(), entry.getValue());
+-            if (old == null) {
++            final K key = entry.getKey();
++            final boolean contains = containsKey(key);
+             // The return value of put is null if the key did not exist OR the value was null
+             // so it cannot be used to determine whether the key was added
++            put(index, entry.getKey(), entry.getValue());
++            if (!contains) {
+                 // if no key was replaced, increment the index
+                 index++;
+             } else {
+
+
+
+Checkout Path: defects4j_work/Collections_23_b
+Test Name: org.apache.commons.collections4.TrieUtilsTest::testUnmodifiableTrie
+Error Message: junit.framework.AssertionFailedError: UnmodifiableTrie shall not be decorated expected same:<Trie[0]={
+}
+> was not:<Trie[0]={
+}
+>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotSame(Assert.java:325)
+	at junit.framework.Assert.assertSame(Assert.java:288)
+	at junit.framework.TestCase.assertSame(TestCase.java:456)
+	at org.apache.commons.collections4.TrieUtilsTest.testUnmodifiableTrie(TrieUtilsTest.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_23_b
+Test Name: org.apache.commons.collections4.trie.UnmodifiableTrieTest::testDecorateFactory
+Error Message: junit.framework.AssertionFailedError: expected same:<Trie[18]={
+  Entry(key=again [28], value=againv, parent=all [14], left=again [28], right=all [14], predecessor=again [28])
+  Entry(key=all [14], value=allv, parent=foo [13], left=again [28], right=bar [28], predecessor=again [28])
+  Entry(key=bar [28], value=barv, parent=all [14], left=baz [44], right=blah [9], predecessor=baz [44])
+  Entry(key=baz [44], value=bazv, parent=bar [28], left=bar [28], right=baz [44], predecessor=baz [44])
+  Entry(key=blah [9], value=blahv, parent=ROOT, left=ROOT, right=tmp [11], predecessor=bar [28])
+  Entry(key=foo [13], value=foov, parent=hello [12], left=all [14], right=gosh [15], predecessor=gosh [15])
+  Entry(key=gee [28], value=geev, parent=gosh [15], left=gee [28], right=golly [43], predecessor=gee [28])
+  Entry(key=golly [43], value=gollyv, parent=gee [28], left=goodbye [46], right=gosh [15], predecessor=goodbye [46])
+  Entry(key=goodbye [46], value=goodbyev, parent=golly [43], left=golly [43], right=goodbye [46], predecessor=goodbye [46])
+  Entry(key=gosh [15], value=goshv, parent=foo [13], left=foo [13], right=gee [28], predecessor=golly [43])
+  Entry(key=hello [12], value=hellov, parent=tmp [11], left=foo [13], right=nonnullkey [13], predecessor=key [14])
+  Entry(key=key [14], value=null, parent=nonnullkey [13], left=hello [12], right=key2 [58], predecessor=key2 [58])
+  Entry(key=key2 [58], value=value, parent=key [14], left=key [14], right=key2 [58], predecessor=key2 [58])
+  Entry(key=nonnullkey [13], value=value, parent=hello [12], left=key [14], right=nonnullkey [13], predecessor=nonnullkey [13])
+  Entry(key=see [13], value=seev, parent=you [12], left=see [13], right=we'll [14], predecessor=see [13])
+  Entry(key=tmp [11], value=tmpv, parent=blah [9], left=hello [12], right=you [12], predecessor=we'll [14])
+  Entry(key=we'll [14], value=we'llv, parent=see [13], left=tmp [11], right=we'll [14], predecessor=we'll [14])
+  Entry(key=you [12], value=youv, parent=tmp [11], left=see [13], right=you [12], predecessor=you [12])
+}
+> was not:<Trie[18]={
+  Entry(key=again [28], value=againv, parent=all [14], left=again [28], right=all [14], predecessor=again [28])
+  Entry(key=all [14], value=allv, parent=foo [13], left=again [28], right=bar [28], predecessor=again [28])
+  Entry(key=bar [28], value=barv, parent=all [14], left=baz [44], right=blah [9], predecessor=baz [44])
+  Entry(key=baz [44], value=bazv, parent=bar [28], left=bar [28], right=baz [44], predecessor=baz [44])
+  Entry(key=blah [9], value=blahv, parent=ROOT, left=ROOT, right=tmp [11], predecessor=bar [28])
+  Entry(key=foo [13], value=foov, parent=hello [12], left=all [14], right=gosh [15], predecessor=gosh [15])
+  Entry(key=gee [28], value=geev, parent=gosh [15], left=gee [28], right=golly [43], predecessor=gee [28])
+  Entry(key=golly [43], value=gollyv, parent=gee [28], left=goodbye [46], right=gosh [15], predecessor=goodbye [46])
+  Entry(key=goodbye [46], value=goodbyev, parent=golly [43], left=golly [43], right=goodbye [46], predecessor=goodbye [46])
+  Entry(key=gosh [15], value=goshv, parent=foo [13], left=foo [13], right=gee [28], predecessor=golly [43])
+  Entry(key=hello [12], value=hellov, parent=tmp [11], left=foo [13], right=nonnullkey [13], predecessor=key [14])
+  Entry(key=key [14], value=null, parent=nonnullkey [13], left=hello [12], right=key2 [58], predecessor=key2 [58])
+  Entry(key=key2 [58], value=value, parent=key [14], left=key [14], right=key2 [58], predecessor=key2 [58])
+  Entry(key=nonnullkey [13], value=value, parent=hello [12], left=key [14], right=nonnullkey [13], predecessor=nonnullkey [13])
+  Entry(key=see [13], value=seev, parent=you [12], left=see [13], right=we'll [14], predecessor=see [13])
+  Entry(key=tmp [11], value=tmpv, parent=blah [9], left=hello [12], right=you [12], predecessor=we'll [14])
+  Entry(key=we'll [14], value=we'llv, parent=see [13], left=tmp [11], right=we'll [14], predecessor=we'll [14])
+  Entry(key=you [12], value=youv, parent=tmp [11], left=see [13], right=you [12], predecessor=you [12])
+}
+>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotSame(Assert.java:325)
+	at junit.framework.Assert.assertSame(Assert.java:288)
+	at junit.framework.Assert.assertSame(Assert.java:296)
+	at junit.framework.TestCase.assertSame(TestCase.java:465)
+	at org.apache.commons.collections4.trie.UnmodifiableTrieTest.testDecorateFactory(UnmodifiableTrieTest.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-23:
+https://issues.apache.org/jira/browse/COLLECTIONS-495
+patch for Collections-23:
+--- defects4j_work/Collections_23_b/src/main/java/org/apache/commons/collections4/trie/UnmodifiableTrie.java	2025-10-13 20:15:29.715902684 +0600
++++ defects4j_work/Collections_23_f/src/main/java/org/apache/commons/collections4/trie/UnmodifiableTrie.java	2025-10-13 20:15:38.968359681 +0600
+@@ -51,7 +51,12 @@
+      * @return a new unmodifiable trie
+      * @throws IllegalArgumentException if trie is null
+      */
+-    public static <K, V> UnmodifiableTrie<K, V> unmodifiableTrie(final Trie<K, ? extends V> trie) {
++    public static <K, V> Trie<K, V> unmodifiableTrie(final Trie<K, ? extends V> trie) {
++        if (trie instanceof Unmodifiable) {
++            @SuppressWarnings("unchecked") // safe to upcast
++            final Trie<K, V> tmpTrie = (Trie<K, V>) trie;
++            return tmpTrie;
++        }
+         return new UnmodifiableTrie<K, V>(trie);
+     }
+ 
+
+
+
+Checkout Path: defects4j_work/Collections_24_b
+Test Name: org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionTest::testDecorateFactory
+Error Message: junit.framework.AssertionFailedError: expected same:<[, One, 2, Three, null, 4, One, 5.0, 6.0, Seven, Eight, Nine, 10, 11, 12, Thirteen, 14, 15, 16]> was not:<[, One, 2, Three, null, 4, One, 5.0, 6.0, Seven, Eight, Nine, 10, 11, 12, Thirteen, 14, 15, 16]>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotSame(Assert.java:325)
+	at junit.framework.Assert.assertSame(Assert.java:288)
+	at junit.framework.Assert.assertSame(Assert.java:296)
+	at junit.framework.TestCase.assertSame(TestCase.java:465)
+	at org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionTest.testDecorateFactory(UnmodifiableBoundedCollectionTest.java:94)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Collections_24_b
+Test Name: org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionTest::testUnmodifiable
+Error Message: junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at org.apache.commons.collections4.collection.UnmodifiableBoundedCollectionTest.testUnmodifiable(UnmodifiableBoundedCollectionTest.java:88)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-24:
+https://issues.apache.org/jira/browse/COLLECTIONS-496
+patch for Collections-24:
+--- defects4j_work/Collections_24_b/src/main/java/org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.java	2025-10-13 20:15:43.216562520 +0600
++++ defects4j_work/Collections_24_f/src/main/java/org/apache/commons/collections4/collection/UnmodifiableBoundedCollection.java	2025-10-13 20:15:52.963169543 +0600
+@@ -20,6 +20,7 @@
+ import java.util.Iterator;
+ 
+ import org.apache.commons.collections4.BoundedCollection;
++import org.apache.commons.collections4.Unmodifiable;
+ import org.apache.commons.collections4.iterators.UnmodifiableIterator;
+ 
+ /**
+@@ -40,7 +41,7 @@
+  * @version $Id$
+  */
+ public final class UnmodifiableBoundedCollection<E> extends AbstractCollectionDecorator<E>
+-        implements BoundedCollection<E> {
++        implements BoundedCollection<E>, Unmodifiable {
+ 
+     /** Serialization version */
+     private static final long serialVersionUID = -7112672385450340330L;
+@@ -55,6 +56,11 @@
+      * @since 4.0
+      */
+     public static <E> BoundedCollection<E> unmodifiableBoundedCollection(final BoundedCollection<? extends E> coll) {
++        if (coll instanceof Unmodifiable) {
++            @SuppressWarnings("unchecked") // safe to upcast
++            final BoundedCollection<E> tmpColl = (BoundedCollection<E>) coll;
++            return tmpColl;
++        }
+         return new UnmodifiableBoundedCollection<E>(coll);
+     }
+ 
+
+
+
+Checkout Path: defects4j_work/Collections_25_b
+Test Name: org.apache.commons.collections4.IteratorUtilsTest::testCollatedIterator
+Error Message: java.lang.NullPointerException: You must invoke setComparator() to set a comparator first.
+	at org.apache.commons.collections4.iterators.CollatingIterator.least(CollatingIterator.java:366)
+	at org.apache.commons.collections4.iterators.CollatingIterator.next(CollatingIterator.java:251)
+	at org.apache.commons.collections4.IteratorUtils.toList(IteratorUtils.java:1147)
+	at org.apache.commons.collections4.IteratorUtils.toList(IteratorUtils.java:1122)
+	at org.apache.commons.collections4.IteratorUtilsTest.testCollatedIterator(IteratorUtilsTest.java:943)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-25:
+https://issues.apache.org/jira/browse/COLLECTIONS-566
+patch for Collections-25:
+--- defects4j_work/Collections_25_b/src/main/java/org/apache/commons/collections4/IteratorUtils.java	2025-10-13 20:15:56.511336518 +0600
++++ defects4j_work/Collections_25_f/src/main/java/org/apache/commons/collections4/IteratorUtils.java	2025-10-13 20:16:05.079740901 +0600
+@@ -602,7 +602,9 @@
+     public static <E> Iterator<E> collatedIterator(final Comparator<? super E> comparator,
+                                                    final Iterator<? extends E> iterator1,
+                                                    final Iterator<? extends E> iterator2) {
+-        return new CollatingIterator<E>(comparator, iterator1, iterator2);
++        @SuppressWarnings("unchecked")
++        final Comparator<E> comp = comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator;
++        return new CollatingIterator<E>(comp, iterator1, iterator2);
+     }
+ 
+     /**
+@@ -623,7 +625,9 @@
+      */
+     public static <E> Iterator<E> collatedIterator(final Comparator<? super E> comparator,
+                                                    final Iterator<? extends E>... iterators) {
+-        return new CollatingIterator<E>(comparator, iterators);
++        @SuppressWarnings("unchecked")
++        final Comparator<E> comp = comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator;
++        return new CollatingIterator<E>(comp, iterators);
+     }
+ 
+     /**
+@@ -645,7 +649,9 @@
+      */
+     public static <E> Iterator<E> collatedIterator(final Comparator<? super E> comparator,
+                                                    final Collection<Iterator<? extends E>> iterators) {
+-        return new CollatingIterator<E>(comparator, iterators);
++        @SuppressWarnings("unchecked")
++        final Comparator<E> comp = comparator == null ? ComparatorUtils.NATURAL_COMPARATOR : comparator;
++        return new CollatingIterator<E>(comp, iterators);
+     }
+ 
+     // Object Graph
+
+
+
+Checkout Path: defects4j_work/Collections_26_b
+Test Name: org.apache.commons.collections4.keyvalue.MultiKeyTest::testEqualsAfterSerializationOfDerivedClass
+Error Message: junit.framework.AssertionFailedError: expected:<3> but was:<0>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at junit.framework.TestCase.assertEquals(TestCase.java:409)
+	at org.apache.commons.collections4.keyvalue.MultiKeyTest.testEqualsAfterSerializationOfDerivedClass(MultiKeyTest.java:292)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-26:
+https://issues.apache.org/jira/browse/COLLECTIONS-576
+patch for Collections-26:
+--- defects4j_work/Collections_26_b/src/main/java/org/apache/commons/collections4/keyvalue/MultiKey.java	2025-10-13 20:16:08.543904745 +0600
++++ defects4j_work/Collections_26_f/src/main/java/org/apache/commons/collections4/keyvalue/MultiKey.java	2025-10-13 20:16:16.672289319 +0600
+@@ -274,7 +274,7 @@
+      * only stable for the same process).
+      * @return the instance with recalculated hash code
+      */
+-    private Object readResolve() {
++    protected Object readResolve() {
+         calculateHashCode(keys);
+         return this;
+     }
+
+
+
+Checkout Path: defects4j_work/Collections_27_b
+Test Name: org.apache.commons.collections4.map.MultiValueMapTest::testUnsafeDeSerialization
+Error Message: junit.framework.AssertionFailedError: unsafe clazz accepted when de-serializing MultiValueMap
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.TestCase.fail(TestCase.java:227)
+	at org.apache.commons.collections4.map.MultiValueMapTest.testUnsafeDeSerialization(MultiValueMapTest.java:405)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-27:
+https://issues.apache.org/jira/browse/COLLECTIONS-580
+patch for Collections-27:
+--- defects4j_work/Collections_27_b/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java	2025-10-13 20:16:20.134614928 +0600
++++ defects4j_work/Collections_27_f/src/main/java/org/apache/commons/collections4/map/MultiValueMap.java	2025-10-13 20:16:27.998985609 +0600
+@@ -565,6 +565,13 @@
+             }
+         }
+ 
++        private void readObject(ObjectInputStream is) throws IOException, ClassNotFoundException {
++            is.defaultReadObject();
++            // ensure that the de-serialized class is a Collection, COLLECTIONS-580
++            if (clazz != null && !Collection.class.isAssignableFrom(clazz)) {
++                throw new UnsupportedOperationException();
++            }
++        }
+     }
+ 
+ }
+
+
+
+Checkout Path: defects4j_work/Collections_28_b
+Test Name: org.apache.commons.collections4.trie.PatriciaTrieTest::testPrefixMapClear
+Error Message: java.lang.NullPointerException
+	at org.apache.commons.collections4.trie.AbstractPatriciaTrie$PrefixRangeEntrySet$EntryIterator.remove(AbstractPatriciaTrie.java:2405)
+	at java.base/java.util.AbstractCollection.clear(AbstractCollection.java:447)
+	at java.base/java.util.AbstractMap.clear(AbstractMap.java:297)
+	at org.apache.commons.collections4.trie.PatriciaTrieTest.testPrefixMapClear(PatriciaTrieTest.java:386)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Collections-28:
+https://issues.apache.org/jira/browse/COLLECTIONS-586
+patch for Collections-28:
+--- defects4j_work/Collections_28_b/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2025-10-13 20:16:31.319142274 +0600
++++ defects4j_work/Collections_28_f/src/main/java/org/apache/commons/collections4/trie/AbstractPatriciaTrie.java	2025-10-13 20:16:39.247517701 +0600
+@@ -2259,6 +2259,16 @@
+             return new RangeEntryMap(fromKey, fromInclusive, toKey, toInclusive);
+         }
+ 
++        @Override
++        public void clear() {
++            Iterator<Map.Entry<K, V>> it = AbstractPatriciaTrie.this.entrySet().iterator();
++            Set<K> currentKeys = keySet();
++            while (it.hasNext()) {
++                if (currentKeys.contains(it.next().getKey())) {
++                    it.remove();
++                }
++            }
++        }
+     }
+ 
+     /**
+
+
+

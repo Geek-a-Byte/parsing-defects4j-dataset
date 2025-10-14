@@ -1,0 +1,1486 @@
+Checkout Path: defects4j_work/Csv_1_b
+Test Name: org.apache.commons.csv.CSVParserTest::testGetLineNumberWithCR
+Error Message: junit.framework.AssertionFailedError: expected:<1> but was:<0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at org.apache.commons.csv.CSVParserTest.testGetLineNumberWithCR(CSVParserTest.java:510)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-1:
+https://issues.apache.org/jira/browse/CSV-75
+patch for Csv-1:
+--- defects4j_work/Csv_1_b/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	2025-10-14 10:20:16.221112221 +0600
++++ defects4j_work/Csv_1_f/src/main/java/org/apache/commons/csv/ExtendedBufferedReader.java	2025-10-14 10:20:26.361862032 +0600
+@@ -55,7 +55,7 @@
+     @Override
+     public int read() throws IOException {
+         int current = super.read();
+-        if (current == '\n') {
++        if (current == '\r' || (current == '\n' && lastChar != '\r')) {
+             lineCounter++;
+         }
+         lastChar = current;
+
+
+
+Checkout Path: defects4j_work/Csv_2_b
+Test Name: org.apache.commons.csv.CSVRecordTest::testGetStringInconsistentRecord
+Error Message: java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.ArrayIndexOutOfBoundsException>
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 3
+	at org.apache.commons.csv.CSVRecord.get(CSVRecord.java:85)
+	at org.apache.commons.csv.CSVRecordTest.testGetStringInconsistentRecord(CSVRecordTest.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	... 33 more
+report for Csv-2:
+https://issues.apache.org/jira/browse/CSV-96
+patch for Csv-2:
+--- defects4j_work/Csv_2_b/src/main/java/org/apache/commons/csv/CSVRecord.java	2025-10-14 10:20:32.538335045 +0600
++++ defects4j_work/Csv_2_f/src/main/java/org/apache/commons/csv/CSVRecord.java	2025-10-14 10:20:40.566950664 +0600
+@@ -82,7 +82,14 @@
+                     "No header mapping was specified, the record values can't be accessed by name");
+         }
+         final Integer index = mapping.get(name);
++        try {
+             return index != null ? values[index.intValue()] : null;
++        } catch (ArrayIndexOutOfBoundsException e) {
++            throw new IllegalArgumentException(
++                    String.format(
++                            "Index for header '%s' is %d but CSVRecord only has %d values!",
++                            name, index.intValue(), values.length));
++        }
+     }
+ 
+     /**
+
+
+
+Checkout Path: defects4j_work/Csv_3_b
+Test Name: org.apache.commons.csv.CSVLexerTest::testEscapedMySqlNullValue
+Error Message: junit.framework.AssertionFailedError:
+Expected: token has content "character\NEscaped"
+     but: token content is "characterNEscaped"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.apache.commons.csv.CSVLexerTest.testEscapedMySqlNullValue(CSVLexerTest.java:335)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_3_b
+Test Name: org.apache.commons.csv.CSVLexerTest::testEscapedCharacter
+Error Message: junit.framework.AssertionFailedError:
+Expected: token has content "character\aEscaped"
+     but: token content is "characteraEscaped"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.apache.commons.csv.CSVLexerTest.testEscapedCharacter(CSVLexerTest.java:341)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_3_b
+Test Name: org.apache.commons.csv.CSVParserTest::testBackslashEscaping
+Error Message: junit.framework.AssertionFailedError: Records do not match expected result (entry 8): arrays first differed at element [1]; expected:<   "quoted "" [/]" / string"   > but was:<   "quoted "" []" / string"   >
+	at org.junit.internal.ComparisonCriteria.arrayEquals(ComparisonCriteria.java:55)
+	at org.junit.Assert.internalArrayEquals(Assert.java:532)
+	at org.junit.Assert.assertArrayEquals(Assert.java:283)
+	at org.apache.commons.csv.Utils.compare(Utils.java:59)
+	at org.apache.commons.csv.CSVParserTest.testBackslashEscaping(CSVParserTest.java:322)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-3:
+https://issues.apache.org/jira/browse/CSV-58
+patch for Csv-3:
+--- defects4j_work/Csv_3_b/src/main/java/org/apache/commons/csv/Lexer.java	2025-10-14 10:20:46.551409252 +0600
++++ defects4j_work/Csv_3_f/src/main/java/org/apache/commons/csv/Lexer.java	2025-10-14 10:20:59.533133566 +0600
+@@ -108,8 +108,11 @@
+             throw new IOException("EOF whilst processing escape sequence");
+         default:
+             // Now check for meta-characters
++            if (isDelimiter(c) || isEscape(c) || isQuoteChar(c) || isCommentStart(c)) {
+                 return c;
++            }
+             // indicate unexpected char - available from in.getLastChar()
++            return END_OF_STREAM;
+         }
+     }
+ 
+
+
+
+Checkout Path: defects4j_work/Csv_4_b
+Test Name: org.apache.commons.csv.CSVParserTest::testNoHeaderMap
+Error Message: java.lang.NullPointerException
+	at java.base/java.util.HashMap.putMapEntries(HashMap.java:497)
+	at java.base/java.util.LinkedHashMap.<init>(LinkedHashMap.java:384)
+	at org.apache.commons.csv.CSVParser.getHeaderMap(CSVParser.java:288)
+	at org.apache.commons.csv.CSVParserTest.testNoHeaderMap(CSVParserTest.java:670)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-4:
+https://issues.apache.org/jira/browse/CSV-100
+patch for Csv-4:
+--- defects4j_work/Csv_4_b/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:21:06.605672372 +0600
++++ defects4j_work/Csv_4_f/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:21:15.626361645 +0600
+@@ -285,7 +285,7 @@
+      * @return a copy of the header map that iterates in column order.
+      */
+     public Map<String, Integer> getHeaderMap() {
+-        return new LinkedHashMap<String, Integer>(this.headerMap);
++        return this.headerMap == null ? null : new LinkedHashMap<String, Integer>(this.headerMap);
+     }
+ 
+     /**
+
+
+
+Checkout Path: defects4j_work/Csv_5_b
+Test Name: org.apache.commons.csv.CSVFormatTest::testNullRecordSeparatorCsv106
+Error Message: junit.framework.AssertionFailedError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at org.apache.commons.csv.CSVFormatTest.testNullRecordSeparatorCsv106(CSVFormatTest.java:237)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-5:
+https://issues.apache.org/jira/browse/CSV-106
+patch for Csv-5:
+--- defects4j_work/Csv_5_b/src/main/java/org/apache/commons/csv/CSVPrinter.java	2025-10-14 10:21:22.582889885 +0600
++++ defects4j_work/Csv_5_f/src/main/java/org/apache/commons/csv/CSVPrinter.java	2025-10-14 10:21:32.607122470 +0600
+@@ -322,7 +322,9 @@
+      */
+     public void println() throws IOException {
+         final String recordSeparator = format.getRecordSeparator();
++        if (recordSeparator != null) {
+             out.append(recordSeparator);
++        }
+         newRecord = true;
+     }
+ 
+
+
+
+Checkout Path: defects4j_work/Csv_6_b
+Test Name: org.apache.commons.csv.CSVRecordTest::testToMapWithShortRecord
+Error Message: java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at org.apache.commons.csv.CSVRecord.putIn(CSVRecord.java:182)
+	at org.apache.commons.csv.CSVRecord.toMap(CSVRecord.java:212)
+	at org.apache.commons.csv.CSVRecordTest.testToMapWithShortRecord(CSVRecordTest.java:167)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-6:
+https://issues.apache.org/jira/browse/CSV-111
+patch for Csv-6:
+--- defects4j_work/Csv_6_b/src/main/java/org/apache/commons/csv/CSVRecord.java	2025-10-14 10:21:40.167690322 +0600
++++ defects4j_work/Csv_6_f/src/main/java/org/apache/commons/csv/CSVRecord.java	2025-10-14 10:21:49.572396705 +0600
+@@ -179,7 +179,9 @@
+     <M extends Map<String, String>> M putIn(final M map) {
+         for (final Entry<String, Integer> entry : mapping.entrySet()) {
+             final int col = entry.getValue().intValue();
++            if (col < values.length) {
+                 map.put(entry.getKey(), values[col]);
++            }
+         }
+         return map;
+     }
+
+
+
+Checkout Path: defects4j_work/Csv_7_b
+Test Name: org.apache.commons.csv.CSVParserTest::testDuplicateHeaderEntries
+Error Message: junit.framework.AssertionFailedError: Expected exception: java.lang.IllegalStateException
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:32)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-7:
+https://issues.apache.org/jira/browse/CSV-112
+patch for Csv-7:
+--- defects4j_work/Csv_7_b/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:21:56.596533697 +0600
++++ defects4j_work/Csv_7_f/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:22:05.541198962 +0600
+@@ -29,6 +29,7 @@
+ import java.net.URL;
+ import java.nio.charset.Charset;
+ import java.util.ArrayList;
++import java.util.Arrays;
+ import java.util.Collection;
+ import java.util.Iterator;
+ import java.util.LinkedHashMap;
+@@ -368,6 +369,9 @@
+             // build the name to index mappings
+             if (header != null) {
+                 for (int i = 0; i < header.length; i++) {
++                    if (hdrMap.containsKey(header[i])) {
++                        throw new IllegalStateException("The header contains duplicate names: " + Arrays.toString(header));
++                    }
+                     hdrMap.put(header[i], Integer.valueOf(i));
+                 }
+             }
+
+
+
+Checkout Path: defects4j_work/Csv_8_b
+Test Name: org.apache.commons.csv.CSVFormatTest::testDuplicateHeaderElements
+Error Message: java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.IllegalStateException>
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Caused by: java.lang.IllegalStateException: The header contains duplicate names: [A, A]
+	at org.apache.commons.csv.CSVFormat.validate(CSVFormat.java:669)
+	at org.apache.commons.csv.CSVFormatTest.testDuplicateHeaderElements(CSVFormatTest.java:66)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
+	... 32 more
+report for Csv-8:
+https://issues.apache.org/jira/browse/CSV-114
+patch for Csv-8:
+--- defects4j_work/Csv_8_b/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:22:12.565814544 +0600
++++ defects4j_work/Csv_8_f/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:22:21.502648349 +0600
+@@ -313,6 +313,12 @@
+         if (header == null) {
+         	this.header = null;
+         } else {
++        	Set<String> dupCheck = new HashSet<String>();
++        	for(String hdr : header) {
++        		if (!dupCheck.add(hdr)) {
++        			throw new IllegalArgumentException("The header contains a duplicate entry: '" + hdr + "' in " + Arrays.toString(header));
++        		}
++        	}
+             this.header = header.clone();        	
+         }
+         this.skipHeaderRecord = skipHeaderRecord;
+@@ -662,13 +668,6 @@
+             throw new IllegalStateException("No quotes mode set but no escape character is set");
+         }
+ 
+-        if (header != null) {
+-            final Set<String> set = new HashSet<String>(header.length);
+-            set.addAll(Arrays.asList(header));
+-            if (set.size() != header.length) {
+-                throw new IllegalStateException("The header contains duplicate names: " + Arrays.toString(header));
+-            }
+-        }
+     }
+ 
+     /**
+
+
+
+Checkout Path: defects4j_work/Csv_9_b
+Test Name: org.apache.commons.csv.CSVRecordTest::testToMapWithNoHeader
+Error Message: java.lang.NullPointerException
+	at org.apache.commons.csv.CSVRecord.putIn(CSVRecord.java:180)
+	at org.apache.commons.csv.CSVRecord.toMap(CSVRecord.java:214)
+	at org.apache.commons.csv.CSVRecordTest.testToMapWithNoHeader(CSVRecordTest.java:175)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-9:
+https://issues.apache.org/jira/browse/CSV-118
+patch for Csv-9:
+--- defects4j_work/Csv_9_b/src/main/java/org/apache/commons/csv/CSVRecord.java	2025-10-14 10:22:28.524159792 +0600
++++ defects4j_work/Csv_9_f/src/main/java/org/apache/commons/csv/CSVRecord.java	2025-10-14 10:22:37.544858198 +0600
+@@ -177,6 +177,9 @@
+      * @return the given map.
+      */
+     <M extends Map<String, String>> M putIn(final M map) {
++        if (mapping == null) {
++            return map;
++        }
+         for (final Entry<String, Integer> entry : mapping.entrySet()) {
+             final int col = entry.getValue().intValue();
+             if (col < values.length) {
+
+
+
+Checkout Path: defects4j_work/Csv_10_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testHeader
+Error Message: junit.framework.AssertionFailedError: expected:<[C1,C2,C3
+]a,b,c
+x,y,z
+> but was:<[]a,b,c
+x,y,z
+>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testHeader(CSVPrinterTest.java:495)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-10:
+https://issues.apache.org/jira/browse/CSV-120
+patch for Csv-10:
+--- defects4j_work/Csv_10_b/src/main/java/org/apache/commons/csv/CSVPrinter.java	2025-10-14 10:22:44.549393230 +0600
++++ defects4j_work/Csv_10_f/src/main/java/org/apache/commons/csv/CSVPrinter.java	2025-10-14 10:22:53.534012087 +0600
+@@ -67,6 +67,9 @@
+         this.format.validate();
+         // TODO: Is it a good idea to do this here instead of on the first call to a print method?
+         // It seems a pain to have to track whether the header has already been printed or not.
++        if (format.getHeader() != null) {
++            this.printRecord((Object[]) format.getHeader());
++        }
+     }
+ 
+     // ======================================================
+
+
+
+Checkout Path: defects4j_work/Csv_11_b
+Test Name: org.apache.commons.csv.CSVParserTest::testHeaderMissingWithNull
+Error Message: java.lang.NullPointerException
+	at org.apache.commons.csv.CSVParser.initializeHeader(CSVParser.java:384)
+	at org.apache.commons.csv.CSVParser.<init>(CSVParser.java:250)
+	at org.apache.commons.csv.CSVFormat.parse(CSVFormat.java:611)
+	at org.apache.commons.csv.CSVParserTest.testHeaderMissingWithNull(CSVParserTest.java:670)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-11:
+https://issues.apache.org/jira/browse/CSV-122
+patch for Csv-11:
+--- defects4j_work/Csv_11_b/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:23:01.443020787 +0600
++++ defects4j_work/Csv_11_f/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:23:10.483694841 +0600
+@@ -381,7 +381,7 @@
+                 for (int i = 0; i < headerRecord.length; i++) {
+                     final String header = headerRecord[i];
+                     final boolean containsHeader = hdrMap.containsKey(header);
+-                    final boolean emptyHeader = header.trim().isEmpty();
++                    final boolean emptyHeader = header == null || header.trim().isEmpty();
+                     if (containsHeader && (!emptyHeader || (emptyHeader && !this.format.getIgnoreEmptyHeaders()))) {
+                         throw new IllegalArgumentException("The header contains a duplicate name: \"" + header +
+                                 "\" in " + Arrays.toString(headerRecord));
+
+
+
+Checkout Path: defects4j_work/Csv_12_b
+Test Name: org.apache.commons.csv.CSVParserTest::testExcelHeaderCountLessThanData
+Error Message: java.lang.IllegalArgumentException: The header contains a duplicate name: "" in [A, B, C, , ]
+	at org.apache.commons.csv.CSVParser.initializeHeader(CSVParser.java:368)
+	at org.apache.commons.csv.CSVParser.<init>(CSVParser.java:248)
+	at org.apache.commons.csv.CSVParser.parse(CSVParser.java:178)
+	at org.apache.commons.csv.CSVParserTest.testExcelHeaderCountLessThanData(CSVParserTest.java:380)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-12:
+https://issues.apache.org/jira/browse/CSV-128
+patch for Csv-12:
+--- defects4j_work/Csv_12_b/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:23:17.560225859 +0600
++++ defects4j_work/Csv_12_f/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:23:26.672227215 +0600
+@@ -216,7 +216,7 @@
+      * Note: this is currently like {@link #RFC4180} plus {@link #withAllowMissingColumnNames(boolean) withAllowMissingColumnNames(true)}.
+      * </p>
+      */
+-    public static final CSVFormat EXCEL = DEFAULT.withIgnoreEmptyLines(false);
++    public static final CSVFormat EXCEL = DEFAULT.withIgnoreEmptyLines(false).withAllowMissingColumnNames(true);
+ 
+     /**
+      * Tab-delimited format.
+
+
+
+Checkout Path: defects4j_work/Csv_13_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testMySqlNullOutput
+Error Message: junit.framework.AssertionFailedError: expected:<"NULL"	[NULL]
+> but was:<"NULL"	["NULL"]
+>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testMySqlNullOutput(CSVPrinterTest.java:331)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_13_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testMySqlNullStringDefault
+Error Message: junit.framework.AssertionFailedError: expected:<\N> but was:<null>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testMySqlNullStringDefault(CSVPrinterTest.java:319)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-13:
+https://issues.apache.org/jira/browse/CSV-168
+patch for Csv-13:
+--- defects4j_work/Csv_13_b/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:23:33.508716242 +0600
++++ defects4j_work/Csv_13_f/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:23:44.537533300 +0600
+@@ -316,7 +316,7 @@
+      *      http://dev.mysql.com/doc/refman/5.1/en/load-data.html</a>
+      */
+     public static final CSVFormat MYSQL = DEFAULT.withDelimiter(TAB).withEscape(BACKSLASH).withIgnoreEmptyLines(false)
+-            .withQuote(null).withRecordSeparator(LF);
++            .withQuote(null).withRecordSeparator(LF).withNullString("\\N");
+ 
+     /**
+      * Returns true if the given character is a line break character.
+
+--- defects4j_work/Csv_13_b/src/main/java/org/apache/commons/csv/CSVPrinter.java	2025-10-14 10:23:33.440711233 +0600
++++ defects4j_work/Csv_13_f/src/main/java/org/apache/commons/csv/CSVPrinter.java	2025-10-14 10:23:44.537533300 +0600
+@@ -136,7 +136,9 @@
+         if (!newRecord) {
+             out.append(format.getDelimiter());
+         }
+-        if (format.isQuoteCharacterSet()) {
++        if (object == null) {
++            out.append(value);
++        } else if (format.isQuoteCharacterSet()) {
+             // the original object is needed so can check for Number
+             printAndQuote(object, value, offset, len);
+         } else if (format.isEscapeCharacterSet()) {
+
+
+
+Checkout Path: defects4j_work/Csv_14_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testEscapeNull1
+Error Message: junit.framework.AssertionFailedError: expected:<[\]> but was:<["\"]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testEscapeNull1(CSVPrinterTest.java:346)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_14_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testEscapeNull4
+Error Message: junit.framework.AssertionFailedError: expected:<[\\]> but was:<["\\"]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testEscapeNull4(CSVPrinterTest.java:373)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_14_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testEscapeNull5
+Error Message: junit.framework.AssertionFailedError: expected:<[\\]> but was:<["\\"]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testEscapeNull5(CSVPrinterTest.java:382)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_14_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testEscapeBackslash1
+Error Message: junit.framework.AssertionFailedError: expected:<[\]> but was:<['\']>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testEscapeBackslash1(CSVPrinterTest.java:301)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_14_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testEscapeBackslash4
+Error Message: junit.framework.AssertionFailedError: expected:<[\\]> but was:<['\\']>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testEscapeBackslash4(CSVPrinterTest.java:328)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+Checkout Path: defects4j_work/Csv_14_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testEscapeBackslash5
+Error Message: junit.framework.AssertionFailedError: expected:<[\\]> but was:<['\\']>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testEscapeBackslash5(CSVPrinterTest.java:337)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-14:
+https://issues.apache.org/jira/browse/CSV-171
+patch for Csv-14:
+--- defects4j_work/Csv_14_b/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:23:51.730066912 +0600
++++ defects4j_work/Csv_14_f/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:24:13.753696639 +0600
+@@ -1036,7 +1036,7 @@
+                 char c = value.charAt(pos);
+ 
+                 // RFC4180 (https://tools.ietf.org/html/rfc4180) TEXTDATA =  %x20-21 / %x23-2B / %x2D-7E
+-                if (newRecord && (c < '0' || c > '9' && c < 'A' || c > 'Z' && c < 'a' || c > 'z')) {
++                if (newRecord && (c < 0x20 || c > 0x21 && c < 0x23 || c > 0x2B && c < 0x2D || c > 0x7E)) {
+                     quote = true;
+                 } else if (c <= COMMENT) {
+                     // Some other chars at the start of a value caused the parser to fail, so for now
+
+
+
+Checkout Path: defects4j_work/Csv_15_b
+Test Name: org.apache.commons.csv.CSVPrinterTest::testDontQuoteEuroFirstChar
+Error Message: junit.framework.AssertionFailedError: expected:<[€],Deux
+> but was:<["€"],Deux
+>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVPrinterTest.testDontQuoteEuroFirstChar(CSVPrinterTest.java:1040)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-15:
+https://issues.apache.org/jira/browse/CSV-219
+patch for Csv-15:
+--- defects4j_work/Csv_15_b/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:24:20.658212366 +0600
++++ defects4j_work/Csv_15_f/src/main/java/org/apache/commons/csv/CSVFormat.java	2025-10-14 10:24:30.775551280 +0600
+@@ -1186,9 +1186,7 @@
+             } else {
+                 char c = value.charAt(pos);
+ 
+-                if (newRecord && (c < 0x20 || c > 0x21 && c < 0x23 || c > 0x2B && c < 0x2D || c > 0x7E)) {
+-                    quote = true;
+-                } else if (c <= COMMENT) {
++                if (c <= COMMENT) {
+                     // Some other chars at the start of a value caused the parser to fail, so for now
+                     // encapsulate if we start in anything less than '#'. We are being conservative
+                     // by including the default comment char too.
+
+
+
+Checkout Path: defects4j_work/Csv_16_b
+Test Name: org.apache.commons.csv.CSVParserTest::testIteratorSequenceBreaking
+Error Message: junit.framework.AssertionFailedError: expected:<[3]> but was:<[4]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.commons.csv.CSVParserTest.testIteratorSequenceBreaking(CSVParserTest.java:1053)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnit4TestMethodAdapter.run(JUnit4TestMethodAdapter.java:109)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:520)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1492)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:878)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:1980)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeTests(JUnitTask.java:830)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:2287)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:106)
+	at org.apache.tools.ant.Task.perform(Task.java:348)
+	at org.apache.tools.ant.Target.execute(Target.java:392)
+	at org.apache.tools.ant.Target.performTasks(Target.java:413)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:811)
+	at org.apache.tools.ant.Main.startAnt(Main.java:217)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)
+report for Csv-16:
+https://issues.apache.org/jira/browse/CSV-224
+patch for Csv-16:
+--- defects4j_work/Csv_16_b/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:24:37.804069724 +0600
++++ defects4j_work/Csv_16_f/src/main/java/org/apache/commons/csv/CSVParser.java	2025-10-14 10:24:47.536792854 +0600
+@@ -286,6 +286,7 @@
+ 
+     private final Lexer lexer;
+ 
++    private final CSVRecordIterator csvRecordIterator;
+     
+     /** A record buffer for getRecord(). Grows as necessary and is reused. */
+     private final List<String> recordList = new ArrayList<>();
+@@ -354,6 +355,7 @@
+ 
+         this.format = format;
+         this.lexer = new Lexer(format, new ExtendedBufferedReader(reader));
++        this.csvRecordIterator = new CSVRecordIterator();
+         this.headerMap = this.initializeHeader();
+         this.characterOffset = characterOffset;
+         this.recordNumber = recordNumber - 1;
+@@ -520,7 +522,10 @@
+      */
+     @Override
+     public Iterator<CSVRecord> iterator() {
+-        return new Iterator<CSVRecord>() {
++        return csvRecordIterator;
++    }
++    
++    class CSVRecordIterator implements Iterator<CSVRecord> {
+         private CSVRecord current;
+   
+         private CSVRecord getNextRecord() {
+@@ -568,7 +573,6 @@
+             throw new UnsupportedOperationException();
+         }
+     };
+-    }
+ 
+     /**
+      * Parses the next record from the current point in the stream.
+
+
+

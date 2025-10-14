@@ -238,7 +238,15 @@ class Defects4JManager:
                         )
                     print(f"Detailed error for {test_name}:")
                     print(output.error_message)
-
+                    
+                    # checkout path
+                    # test name
+                    # error message
+                    with open("failing_tests.log", "a", encoding="utf-8") as nf:
+                        nf.write(f"Checkout Path: {checkout_path}\n")
+                        nf.write(f"Test Name: {test_name}\n")
+                        nf.write(f"Error Message: {output.error_message}\n")
+                        
         return output
 
     def _parse_test_output(self, stdout: str, stderr: str) -> List[TestOutput]:
@@ -379,23 +387,89 @@ class Defects4JManager:
         # If we couldn't find the test with any variant
         return None
 
-    def export_patch(self, project: str, bug_id: str) -> str:
+    # def export_patch(self, project: str, bug_id: str) -> str:
+    #     """
+    #     Export the patch (code changes) that fixed the bug.
+    #     This shows what was changed between buggy and fixed versions.
+    #     """
+    #     # Try to get code changes
+    #     cmd = f"defects4j export -p code.changes -w /tmp/d4j_{project}_{bug_id}"
+    #     result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+
+    #     # Alternative: try to get git diff format
+    #     cmd_diff = f"defects4j export -p diff -w /tmp/d4j_{project}_{bug_id}"
+    #     result_diff = subprocess.run(
+    #         cmd_diff, shell=True, capture_output=True, text=True
+    #     )
+
+    #     # Return whichever command succeeded
+    #     return result_diff.stdout if result_diff.returncode == 0 else result.stdout
+    
+    def export_patch(self, project: str, bug_id: str, work_dir: Path) -> str:
         """
         Export the patch (code changes) that fixed the bug.
-        This shows what was changed between buggy and fixed versions.
+        This compares buggy version (b) with fixed version (f).
+        
+        Args:
+            project: Project name
+            bug_id: Bug ID
+            work_dir: Working directory for checkouts
         """
-        # Try to get code changes
-        cmd = f"defects4j export -p code.changes -w /tmp/d4j_{project}_{bug_id}"
-        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-
-        # Alternative: try to get git diff format
-        cmd_diff = f"defects4j export -p diff -w /tmp/d4j_{project}_{bug_id}"
-        result_diff = subprocess.run(
-            cmd_diff, shell=True, capture_output=True, text=True
-        )
-
-        # Return whichever command succeeded
-        return result_diff.stdout if result_diff.returncode == 0 else result.stdout
+        buggy_path = work_dir / f"{project}_{bug_id}_b"
+        fixed_path = work_dir / f"{project}_{bug_id}_f"
+    
+        # Method 1: Check out fixed version and manually diff
+        if not fixed_path.exists():
+            print(f"Checking out fixed version {project}-{bug_id}f...")
+            try:
+                self.checkout_bug(project, bug_id, work_dir, version='f')
+            except Exception as e:
+                print(f"Could not check out fixed version: {e}")
+                return ""
+        
+        # Get list of modified classes
+        cmd_modified = f"cd {buggy_path} && defects4j export -p classes.modified"
+        result_modified = subprocess.run(cmd_modified, shell=True, capture_output=True, text=True)
+        
+        if result_modified.returncode != 0:
+            print(f"Warning: Could not get modified classes: {result_modified.stderr}")
+            return ""
+        
+        modified_classes = result_modified.stdout.strip().split('\n')
+        print(f"Modified classes: {modified_classes}")
+        
+        # Get source directories
+        cmd_src = f"cd {buggy_path} && defects4j export -p dir.src.classes"
+        result_src = subprocess.run(cmd_src, shell=True, capture_output=True, text=True)
+        src_dir = result_src.stdout.strip() if result_src.returncode == 0 else "src/main/java"
+        
+        # Build the diff manually by comparing files
+        patch_parts = []
+        for class_file in modified_classes:
+            if not class_file.strip():
+                continue
+                
+            # Convert class name to file path (e.g., org.Foo -> org/Foo.java)
+            file_path = class_file.replace('.', '/') + '.java'
+            
+            buggy_file = buggy_path / src_dir / file_path
+            fixed_file = fixed_path / src_dir / file_path
+            
+            print(f"Diffing {buggy_file} and {fixed_file}...")
+            
+            if buggy_file.exists() and fixed_file.exists():
+                # Use diff command to get the changes
+                cmd_diff = f"diff -u {buggy_file} {fixed_file}"
+                result_diff = subprocess.run(cmd_diff, shell=True, capture_output=True, text=True)
+                # diff returns non-zero when files differ, but that's expected
+                if result_diff.stdout.strip():
+                    patch_parts.append(result_diff.stdout)
+        
+        if patch_parts:
+            return '\n'.join(patch_parts)
+        
+        # Method 2: Fallback - just list what was modified
+        return f"Modified classes:\n" + '\n'.join(f"  - {cls}" for cls in modified_classes)
 
     def get_all_bugs(self, project: str) -> List[str]:
         """
